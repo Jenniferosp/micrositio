@@ -1,0 +1,496 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*****Index****/
+      
+/*#container {
+        margin: 0 auto;
+        width:90%;
+        }*/
+        
+.container {
+    display:flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.box {
+    max-width:400px;
+	min-width:200px;
+    height:auto;
+    padding:10px;
+    margin:0 auto;
+    text-align:center;
+    flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+}
+
+.box p {
+    text-align:justify;
+    word-wrap: break-word;
+    color: gray;
+    font-size: 14px;
+        }
+
+.box img {
+    width:350px;
+    height:auto;
+    }
+
+.botonvermas {
+    display:block;
+    width:20%;
+    padding:0.5em;
+    margin:0 auto;
+    text-align:center;
+    color:#00cace;
+    text-decoration:none;
+    border:1px solid #00cace;
+    border-radius: 3px;
+    box-shadow: #00cace 2px 2px 4px;
+	transition:all ease-in-out 0.5s;
+-moz-transition:all ease-in-out 0.5s;
+-ms-transition:all ease-in-out 0.5s;
+-o-transition:all ease-in-out 0.5s;
+-webkit-transition:all ease-in-out 0.5s;
+    }
+
+.botonvermas:hover {
+    display:block;
+    width:20%;
+    padding:0.5em;
+	margin:0 auto;
+    text-align:center;
+    color:#fff;
+	background:#00cace;
+    text-decoration:none;
+    border:1px solid #00cace;
+    border-radius: 3px;
+    box-shadow: #00cace 2px 2px 4px;
+	transition:all ease-in-out 0.5s;
+-moz-transition:all ease-in-out 0.5s;
+-ms-transition:all ease-in-out 0.5s;
+-o-transition:all ease-in-out 0.5s;
+-webkit-transition:all ease-in-out 0.5s;
+    }
+
+.masinfo {
+    display:block;
+    width:10%;
+    padding:0.5em;
+    text-align:center;
+    color:#00cace;
+    text-decoration:none;
+    border:1px solid #00cace;
+    border-radius: 3px;
+    box-shadow: #00cace 2px 2px 4px;
+	float:left;
+	transition:all ease-in-out 0.5s;
+-moz-transition:all ease-in-out 0.5s;
+-ms-transition:all ease-in-out 0.5s;
+-o-transition:all ease-in-out 0.5s;
+-webkit-transition:all ease-in-out 0.5s;
+    }
+
+.masinfo:hover {
+    display:block;
+    width:10%;
+    padding:0.5em;
+    text-align:center;
+    color:#fff;
+    text-decoration:none;
+    border:1px solid #00cace;
+    border-radius: 3px;
+    box-shadow: #00cace 2px 2px 4px;
+	background:#00cace;
+	float:left;
+	transition:all ease-in-out 0.5s;
+-moz-transition:all ease-in-out 0.5s;
+-ms-transition:all ease-in-out 0.5s;
+-o-transition:all ease-in-out 0.5s;
+-webkit-transition:all ease-in-out 0.5s;
+    }
+
+    
+/* Slideshow para noticias de  fotos*/
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  /*transition: 0.6s ease;*/
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+    
+
+/****Quiénes somos?***/
+
+.contenedor {
+    max-width:70%; 
+	min-width:200px;
+    margin:0 auto;
+}
+
+
+.contenedor strong{
+    font-size:18px;
+    color:#00627b;
+    
+}
+
+#avata{
+    background-size: 30%;
+    width: 20%;
+    height: 400px;
+    float:left;
+    background: url(../img/img_avata.png) no-repeat;
+    margin: -430px 0 0 966px;
+ }
+ 
+#linea_tiempo  img {
+    margin:15px 20px;
+    width:800px; 
+}
+
+#linea_tiempo, #talento_humano {
+    margin:30px 90px;;
+    
+} 
+
+/***Talento humano***/
+.container_talento {
+/*Propiedad flexible para la caja de Box.*/
+    margin-top:30px;
+    width:100%;
+    display:flex;
+    /*Propiedad para que el contenido se organice en forma vertical.*/
+         flex-wrap: wrap;
+             -webkit-flex-wrap: wrap;
+
+}
+.box_hum {
+    width:270px;
+    height:350px;
+    padding:2px;
+    margin:10px 0;
+    text-align:center;
+    /*Propiedad flexible para cada celda.*/
+    /*Permite que se distribuya proporcionalmente*/
+     flex: 1 1 auto;
+     -webkit-flex: 1 1 auto;
+}
+
+.box_hum p {
+    text-align:center;
+    /*Hace que las frases largas no se desborden de la div*/
+    word-wrap: break-word;
+    color: gray;
+    font-size: 14px;
+        }
+
+.box_hum img {
+    width:270px;
+    height:300px;
+    }
+/****Modelo pedagógico****/
+#modelo_pedagogico img {
+    width: 1000px;
+    margin: 25px 50px;
+    
+}
+
+/*****Plan de desarrollo***/
+#plan_desarrollo img {
+    width:800px;
+	height:auto;
+    margin: 25px 50px; 
+}
+
+
+/****Qué hacemos**/
+.container_general {
+/*Propiedad flexible para la caja de Box*/
+    width:100%;
+    display:flex;
+    /*Propiedad para que el contenido se organice en forma vertical.*/
+     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+
+}
+
+.img_quehacemos {
+	flex:1 1 auto;
+	-webkit-flex:1 1 auto;
+	-o-flex:1 1 auto;
+	-ms-flex:1 1 auto;
+	}
+
+.cp_oculta {
+    width:90%;
+    height:480px;
+    margin:0 10px;
+    padding:20px;
+    text-align:justify;
+    border:1px solid #019e9e;
+    border-radius: 5px;
+    background:rgba(235,235,235,0.5);
+    color: gray;
+    font-size: 14px;
+    
+}
+
+.triangle {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    margin-top:-260px;
+    left:100px;
+    border-top: 1px solid #019e9e;
+    border-left: 1px solid #019e9e;
+    background: #f1f2f2;
+    transform: rotate(45deg);
+}
+
+.triangle2 {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    margin-top:-501px;
+    left:400px;
+    border-top: 1px solid #019e9e;
+    border-left: 1px solid #019e9e;
+    background: #f1f2f2;
+    transform: rotate(45deg);
+}
+
+.triangle3 {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    margin-top:-390px;
+    left:700px;
+    border-top: 1px solid #019e9e;
+    border-left: 1px solid #019e9e;
+    background: #f1f2f2;
+    transform: rotate(45deg);
+}
+
+.triangle4 {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    margin-top:-404px;
+    left:1000px;
+    border-top: 1px solid #019e9e;
+    border-left: 1px solid #019e9e;
+    background: #f1f2f2;
+    transform: rotate(45deg);
+}
+
+tr {
+    text-align:center;
+    
+}
+
+/***Clientes***/
+.container_asociados {
+/*Propiedad flexible para la caja de Box.*/
+    max-width:100%;
+	min-width:340px;
+    display:flex;
+    margin:0 auto;
+    /*Propiedad para que el contenido se organice en forma vertical.*/
+         flex-wrap: wrap;
+         -webkit-flex-wrap: wrap;
+}
+
+.box_asociado {
+    width:450px;
+    height:230px;
+    margin:3px;
+    /*Propiedad flexible para cada celda.*/
+    /*Permite que se distribuya proporcionalmente*/
+     flex: 1 1 auto;
+     -webkit-flex: 1 1 auto;
+}
+
+.box_asociado img {
+    width:160px;
+    margin:10px 15px;
+    
+
+}
+
+.flotante
+    {
+    display:none;
+    padding:3px;
+    border-radius:3px;
+    background-color:#019e9e;
+    position:relative;
+    width:150px;
+    height:auto;
+    margin: 0 20px;
+    font-size:11px;
+    color:#fff;
+    font-weight:bold;
+    text-align:center;
+    
+    }
+.flotante h3{
+    font-size:12px;
+    color:#fdfabc;
+    font-weight:bold;
+    text-align:center;    
+    text-shadow: 1px 2px #000;
+}
+
+.box_asociado:hover .flotante {
+    
+    display:block;
+}
+
+
+/*Plataformas*/
+#plataformas {
+    width:80%; 
+    display: -moz-flex; /* Mozilla */
+    -moz-justify-content: center; /* Mozilla */
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: center; /* Safari 6.1+ */
+    display: flex;
+    justify-content: center; 
+     display: -ms-flex;/*IE*/
+    -ms-justify-content: center; 
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin:-5px auto;
+}
+    
+#plataformas a:hover {
+    background: #ddd;
+    opacity: 0.6;
+    border-radius: 20px;
+
+
+}
+
+#plataformas div { 
+    width: 250px; 
+    height:360px;
+    margin: 10px;
+    flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+
+}
+
+#plataformas .uv_academica {
+    background:url(../content/uv_academica.png) no-repeat;
+    }
+#plataformas .uv_investigaciones {
+    background:url(../content/uv_investigaciones.png) no-repeat;
+}
+
+#plataformas .uv_evaluaciones {
+    background:url(../content/uv_evaluaciones.png) no-repeat;
+}
+#plataformas .uv_videos {
+    background:url(../content/uv_videos.png) no-repeat;
+}
+#plataformas .uv_convocatorias {
+    background:url(../content/uv_convocatorias.png) no-repeat;
+}
+
+
+
+/***********************Noticias***********************/
+.news_complete a:visited { color:#3F51B5;}
+
+#horario_gen{
+ width:80%; 
+    display: -moz-flex; /* Mozilla */
+    -moz-justify-content: center; /* Mozilla */
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: center; /* Safari 6.1+ */
+    display: flex;
+    justify-content: center; 
+     display: -ms-flex;/*IE*/
+    -ms-justify-content: center; 
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin:-5px auto;
+}
+
+#horario {  
+     margin:15px 15px;
+     width:250px;
+    flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+}
+#table_horario{ border:1px; margin:0 auto;}
+
+
+.datatable {
+    min-height: 100px;
+    margin: 5px auto;
+    border-spacing: 0;
+}
+
+.datatable th {
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.

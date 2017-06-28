@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>EVyTIC</title>
+
+        <link href="css/style.css" rel="stylesheet"/>
+        <link href="css/custom.css" rel="stylesheet"/>
+        <!--<link rel="stylesheet" type="text/css" href="css/style_tablet.css"/>-->
+        
+        <!-- Estilos Responsive -->
+        <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+
+        <script src="components/jquery/jquery.min.js"></script>
+        <script src="js/library.js"></script>
+        
+              <!-- Codigo de Nuevo slider -->
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js' type='text/javascript'/></script>
+            <!--Instrucciones
+            fadeOut(0): Tiempo en desaparecer la imagen saliente
+			fadeIn(1000): Tiempo en aparecer la imagen entrante
+			('#slider');},4000): Tiempo de permanencia de cada imagen    
+            -->
+            <script type="text/javascript">//<![CDATA[
+				$(function(){
+    			$('#slider div:gt(0)').hide();
+    			setInterval(function(){
+      			$('#slider div:first-child').fadeOut(0)
+         		.next('div').fadeIn(1000)
+         		.end().appendTo('#slider');}, 4000);
+					});
+					//]]></script>
+
+		 	<!-- Fin de Codigo de Nuevo slider -->
+        
+      <!-- Código de Mostrar - Ocultar-->  
+      <script type="text/javascript">
+		function mostrar(){
+		document.getElementById('program_virtual').style.display = 'block';
+		document.getElementById('asig_virtual').style.display = 'none';
+		document.getElementById('incorporacion_tic').style.display = 'none';
+		document.getElementById('E-Virtual').style.display = 'none';}
+		
+		function mostrar2(){
+		document.getElementById('program_virtual').style.display = 'none';
+		document.getElementById('asig_virtual').style.display = 'block';
+		document.getElementById('incorporacion_tic').style.display = 'none';
+		document.getElementById('E-Virtual').style.display = 'none';}	
+        
+		function mostrar3(){
+		document.getElementById('program_virtual').style.display = 'none';
+		document.getElementById('asig_virtual').style.display = 'none';
+		document.getElementById('incorporacion_tic').style.display = 'block';
+		document.getElementById('E-Virtual').style.display = 'none';}   
+            
+        function mostrar4(){
+		document.getElementById('program_virtual').style.display = 'none';
+		document.getElementById('asig_virtual').style.display = 'none';
+		document.getElementById('incorporacion_tic').style.display = 'none';
+		document.getElementById('E-Virtual').style.display = 'block';}
+            
+            </script>
+       
+      <script type="text/javascript">
+		function ocultar(){
+		document.getElementById('program_virtual').style.display = 'none';}
+		
+		function ocultar2(){
+		document.getElementById('asig_virtual').style.display = 'none';}
+		
+		function ocultar3(){
+		document.getElementById('incorporacion_tic').style.display = 'none';}
+		
+		function ocultar4(){
+		document.getElementById('E-Virtual').style.display = 'none';}
+			</script>
+            
+
+
+        
+    </head>
+
+    <body>
+        <div id="main">
+            
+            <div id="encabezado_sup"></div>
+            <header>
+                   <a href="http://www.udem.edu.co/index.php" target="blank"><div id="logo">                        
+                        </div></a>
+                    <!-- Para adicionar un nuevo slide, solo es necesario, adicionar una línea de DIV -->
+                    <div id="slider">
+    					<div><img src="content/slide1.png"/></div>
+    					<div><img src="content/slide2.png"/></div>
+   						<div><img src="content/slide3.png"/></div>
+                        <div><img src="content/slide4.png"/></div>
+					</div>
+            </header>
+            
+            <nav>
+                <div id="menu">
+                    <ul>
+                     <li class="home"><a href="index.html" title="Inicio"><span>Inicio</span></a></li>
+                     <li class="quienessomos"><a href="quienes_somos.html" title="¿Quiénes Somos?">¿Quiénes Somos?</span></a></li>
+                     <li class="active quehacemos"><a href="que_hacemos.html" title="¿Qué Hacemos?"><span>¿Qué Hacemos?</span></a></li>
+                     <li class="plataformas"><a href="plataformas.html" title="Nuetras Plataformas"><span>Plataformas</span></a></li>
+                        <li class="contactenos"><a href="http://www.udem.edu.co/index.php/contactenos" target="_blank" title="Contacto"><span>Contacto</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            
+            <section>
+                   
+                    <div id="separador"><h1>¿Qué hacemos?</h1>
+                        <p><img src="img/separador.png"/></p>
+                        </div>
+                    
+                    <div class="container_general" >
+
+   <!-- Inician imágenes de cada servicio-->
+                <div class="img_quehacemos" onmouseover="mostrar()"><img src="content/program_virtual.png" /></div>
+                <div class="img_quehacemos" onmouseover="mostrar2()"><img src="content/asig_virtual.png" /></div>
+                <div class="img_quehacemos" onmouseover="mostrar3()"><img src="content/incorporacion_tic.png" /></div>
+                <div class="img_quehacemos" onmouseover="mostrar4()"><img src="content/E-Virtual.png" /></div>
+                    
+                <div id="program_virtual" class="cp_oculta" style='display:none;'>  
+                	<p>La Universidad de Medellin ofrece los siguientes <strong>posgrados</strong> virtuales</p>
+                        <p>1.	<a href="http://www.udem.edu.co/index.php/programas-de-posgrado/2012-10-01-15-18-37/contratacion-estatal-100-virtual" target="_blank">Especialización en Contratación Estatal (Facultad de Derecho)</a></p>
+                        <p>2.	<a href="http://www.udem.edu.co/index.php/2012-10-12-14-32-39/2012-10-12-14-33-37/estudios-politicos-y-constitucionales-virtual" target="_blank">Especialización en Estudios Políticos y Constitucionales (Facultad de Ciencias Sociales y Humanas)</a></p>
+                        <p>3.	<a href="http://www.udem.edu.co/index.php/2012-10-12-12-58-54/especializaciones/comunicacion-estrategica-para-la-web-modalidad-virtual" target="_blank">Especialización en Comunicación estrategia para la WEB  (Facultad de Comunicación)</a></p>
+                        <p>4.	<a href="http://www.udem.edu.co/index.php/programas-de-posgrado/2012-10-01-15-18-37/derecho-probatorio-penal-100-virtual" target="_blank">Especialización en  Derecho Probatorio Penal (Facultad de Derecho en convenio con la UCN)</a></p>
+                    <p>Y el <strong>pregrado</strong> en:</p>
+                    <p><a href="http://www.udem.edu.co/index.php/programas-de-pregrado/investigacion-criminal-virtual/informacion-general-investigacion-criminal-virtual" target="_blank">Investigación Criminal (Facultad de Derecho en convenio con la UCN)</a></p> 
+                	<div class="triangle"></div>                                 
+                	<input type="button" value="X" onclick="ocultar()">
+                </div>
+      
+                <div id="asig_virtual" class="cp_oculta" style='display:none;'>
+                    <center><table border="1" cellspacing="0" cellpadding="0" width="513" >
+                          <tr>
+                            <td width="255" valign="top"><p align="center"><strong>Facultad/</strong><strong> Dependencias</strong></p></td>
+                            <td width="258" valign="top"><p align="center"><strong>Asignatura</strong></p></td>
+                          </tr>
+                          <tr>
+                            <td width="255" rowspan="2" valign="middle"><p><strong>Bienestar Universitario</strong><br />
+                            </p></td>
+                            <td width="258" valign="top"><p>Guitarra </p></td>
+                          </tr>
+                          <tr>
+                            <td width="258" valign="top"><p>Actividad Deportiva</p></td>
+                          </tr>
+                          <tr>
+                            <td width="255" rowspan="2" valign="middle"><p><strong>Facultad de Ciencias Sociales y Humanas</strong></p></td>
+                            <td width="258" valign="top"><p>Expresión Escrita</p></td>
+                          </tr>
+                          <tr>
+                            <td width="258" valign="top"><p>Libre elección TIC</p></td>
+                          </tr>
+                          <tr>
+                            <td width="255" rowspan="4" valign="middle"><p><strong>Facultad de Ciencias Básicas</strong></p></td>
+                            <td width="258" valign="top"><p>Álgebra y Trigonometría</p></td>
+                          </tr>
+                          <tr>
+                            <td width="258" valign="top"><p>Cálculo Diferencial</p></td>
+                          </tr>
+                          <tr>
+                            <td width="258" valign="top"><p>Física I</p></td>
+                          </tr>
+                          <tr>
+                            <td width="258" valign="top"><p>Física II</p></td>
+                          </tr>
+                          <tr>
+                            <td width="255" valign="middle"><p><strong>Facultad de Ingenierías</strong></p></td>
+                            <td width="258" valign="top"><p>Fundamentos de Programación</p></td>
+                          </tr>
+                    </table></center>
+                    <div class="triangle2"></div>
+					<input type="button" value="X" onclick="ocultar2()">
+                  </div>
+                    
+                 <div id="incorporacion_tic" class="cp_oculta" style='display:none;'>
+                    <p>1.	Evaluaciones virtuales parciales y finales unificadas</p>
+                    <p>2.	Encuestas de satisfacción en la plataforma UVirtual, para las diferentes dependencias de la Universidad</p>
+                    <p>3.	Aplicación de instrumentos de medición desde la plataforma UVirtual para diferentes áreas de la universidad</p>
+                    <p>4.	Apoyo desde la plataforma UVirtual a las asignaturas presenciales en pregrado y posgrado</p>
+                    <p>5.	Implementación de cursos y diplomados virtuales para el Plan Integral de Actualización Profesoral como:</p>
+                    <ul>
+                        <li>Diplomado: Manejo de Moodle para profesores</li>
+                        <li>Diplomado: Escritura de contenidos para la virtualidad</li>
+                        <li>Curso: Herramientas TIC como apoyo a procesos de enseñanza – aprendizaje</li>
+                        <li>Curso: Estrategias didácticas para la Interacción Comunicativa en Entornos Virtuales de Aprendizaje</li>
+                        <li>Curso: Creación y montaje de cursos Mooc</li>
+                    </ul>
+                    <p>6.	Saber Pro: Implementación de espacio virtual para el apoyo a los estudiantes que presentaran las pruebas ICFES Saber Pro</p>
+                    <p>7.	Curso de Inducción institucional virtual para todos los empleados de la universidad</p>
+                    <p>8.	Capacitación de tratamiento de datos personales virtual para los empleados de la universidad</p>
+                    <div class="triangle3"></div>
+                    <input type="button" value="X" onclick="ocultar3()">
+                   </div>
+                    
+                <div id="E-Virtual" class="cp_oculta" style='display:none;'>
+                    <center><div class="slideshow-container">
+                      <div class="mySlides fade">
+                        <div class="numbertext">1 / 7</div>
+                        <img src="content/fotos_E-Virtual/virtual_4.jpg">
+                      </div>
+
+                      <div class="mySlides fade">
+                        <div class="numbertext">2 / 7</div>
+                        <img src="content/fotos_E-Virtual/virtual_1.png">
+                      </div>
+
+                      <div class="mySlides fade">
+                        <div class="numbertext">3 / 7</div>
+                        <img src="content/fotos_E-Virtual/virtual_2.jpg">
+                      </div>
+                      <div class="mySlides fade">
+                        <div class="numbertext">4 / 7</div>
+                        <img src="content/fotos_E-Virtual/virtual_3.jpg">
+                      </div>
+                        <div class="mySlides fade">
+                        <div class="numbertext">5 / 7</div>
+                        <img src="content/fotos_E-Virtual/virtual_5.jpg">
+                      </div>
+                      <div class="mySlides fade">
+                        <div class="numbertext">6 / 7</div>
+                        <img src="content/fotos_E-Virtual/Club-de-Ciencias.jpg">
+                      </div>
+                       <div class="mySlides fade">
+                        <div class="numbertext">7 / 7</div>
+                        <img src="content/fotos_E-Virtual/CampoTIC.jpg">
+                      </div>
+
+                      <!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+                    </div>
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                      <span class="dot" onclick="currentSlide(4)"></span> 
+                      <span class="dot" onclick="currentSlide(5)"></span> 
+                      <span class="dot" onclick="currentSlide(6)"></span> 
+                      <span class="dot" onclick="currentSlide(7)"></span> 
+                    </div></center>
+                
+                <script>
+                var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none"; 
+                    }
+                    slideIndex++;
+                    if (slideIndex> slides.length) {slideIndex = 1} 
+                    slides[slideIndex-1].style.display = "block"; 
+                    setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+                </script>
+                    <div class="triangle4"></div>
+                    <input type="button" value="X" onclick="ocultar4()">
+                </div>
+                   
+<!-- logos de asociados--></section>
+                    <div id="separador"><h2>Clientes</h2>
+                        <p><img src="img/separador.png"/></p>
+                        </div>
+                        <section>
+                    
+                    <div class="container_asociados">
+                   
+                        <div class="box_asociado">
+                            <img src="content/asociados/Iemp.png"/>
+                            <div class="flotante"><h3>Instituto de Estudios del Ministerio Público</h3>Modelo de educación a distancia para el IEMP-PGN</div>
+                        </div> 
+                        <div class="box_asociado">
+                            <img src="content/asociados/gobernacion.png" alt="Gobernación de Antioquia" />
+                            <div class="flotante"><h3>Gobernación de Antioquia</h3></p></div>
+                        </div>
+                        <div class="box_asociado">
+                           <img src="content/asociados/Epm.png" alt="EPM"/>
+                           <div class="flotante"><h3>Empresas Públicas de Medellín</h3>Proyecto Antioquia Potable y Limpia</div>
+                        </div>      
+                        <div class="box_asociado">
+                            <img src="content/asociados/conconcreto.png" alt="Conconcreto"/>
+                            <div class="flotante"><h3>Conconcreto</h3></p></div>
+                        </div> 
+                        <div class="box_asociado">
+                            <img src="content/asociados/renata.png" alt="Renata"/>
+                            <div class="flotante"><h3>Renata</h3></p></div>
+                        </div> 
+                        <div class="box_asociado">
+                            <img src="content/asociados/ruana.png" alt="Ruana" title="Ruana"/>
+                            <div class="flotante"><h3>Ruana</h3></p></div>
+                        </div>  
+                        <div class="box_asociado">
+                            <img src="content/asociados/confiar.png" alt="CONFIAR" />
+                            <div class="flotante"><h3>CONFIAR</h3></p></div>
+                        </div>    
+                        <div class="box_asociado">
+                            <img src="content/asociados/policia_nacional.png" alt="Policia Nacional"/>
+                            <div class="flotante"><h3>Policia Nacional de Colombia</h3></p></div>
+                        </div> 
+                        <div class="box_asociado">
+                            <img src="content/asociados/ecoflora.png" alt="Ecoflora"/>
+                            <div class="flotante"><h3>Ecoflora</h3></p></div>   
+                        </div>
+                        <div class="box_asociado">
+                            <img src="content/asociados/UCC.png" alt="UCC"/>
+                            <div class="flotante"><h3>Universidad Cooperativa de Colombia</h3></p></div>
+                        </div>   
+                        <div class="box_asociado">
+                            <img src="content/asociados/min_educacion.png" alt="Ministerio de Educación" style="width:240px;" />
+                            <div class="flotante" style="margin:0 auto; "><h3>Ministerio de Educación</h3></p></div>
+                        </div> 
+                        <div class="box_asociado">
+                            <img src="content/asociados/min_tic.png" alt="Ministerio de TIC" style="width:240px;" />
+                            <div class="flotante" style="margin:0 auto; "><h3>Ministerio de TIC</h3></p></div>
+                        </div>
+                        <div class="box_asociado">
+                            <img src="content/asociados/min_justicia.png" alt="Ministerio de Justicia" style="width:240px";/>
+                            <div class="flotante"style="margin:0 auto; "><h3>Ministerio de Justicia</h3></p></div>
+                        </div>
+       
+                    </div>
+                </div> 
+            </section>
+        </div>
+        
+        <a href="http://www.udem.edu.co/index.php" target="blank"><footer><!-- Configurado como fondo desde la hoja de estilos--></footer></a>
+        
+    </body>
+</html>

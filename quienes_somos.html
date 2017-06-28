@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>EVyTIC</title>
+        
+        <link href="css/style.css" rel="stylesheet"/>
+        <link href="css/custom.css" rel="stylesheet"/>
+
+        <!--<link rel="stylesheet" type="text/css" href="css/style_tablet.css"/>-->
+
+		<!-- Estilos Responsive -->
+        <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+        
+        <script src="components/jquery/jquery.min.js"></script>
+        <script src="js/library.js"></script>
+        
+        <!-- Codigo de Nuevo slider -->
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js' type='text/javascript'/></script>
+            <!--Instrucciones
+            fadeOut(0): Tiempo en desaparecer la imagen saliente
+			fadeIn(1000): Tiempo en aparecer la imagen entrante
+			('#slider');},4000): Tiempo de permanencia de cada imagen    
+            -->
+            <script type="text/javascript">//<![CDATA[
+				$(function(){
+    			$('#slider div:gt(0)').hide();
+    			setInterval(function(){
+      			$('#slider div:first-child').fadeOut(0)
+         		.next('div').fadeIn(1000)
+         		.end().appendTo('#slider');}, 4000);
+					});
+					//]]></script>
+
+		 	<!-- Fin de Codigo de Nuevo slider -->
+
+        
+    </head>
+
+    <body>
+        <div id="main">
+          <div id="encabezado_sup"></div>
+            <header>
+                   <a href="http://www.udem.edu.co/index.php" target="blank"><div id="logo">                        
+                        </div></a>
+                    <!-- Para adicionar un nuevo slide, solo es necesario, adicionar una línea de DIV -->
+                    <div id="slider">
+    					<div><img src="content/slide1.png"/></div>
+    					<div><img src="content/slide2.png"/></div>
+   						<div><img src="content/slide3.png"/></div>
+                        <div><img src="content/slide4.png"/></div>
+					</div>
+            </header>
+            
+            <nav>
+                <div id="menu">
+                    <ul>
+                        <li class="home"><a href="index.html" title="Inicio"><span>Inicio</span></a></li>
+                        <li class="active quienessomos"><a href="quienes_somos.html" title="¿Quiénes Somos?">¿Quiénes Somos?</span></a></li>
+                        <li class="quehacemos"><a href="que_hacemos.html" title="¿Qué Hacemos?"><span>¿Qué Hacemos?</span></a></li>
+                        <li class="plataformas"><a href="plataformas.html" title="Nuetras Plataformas"><span>Plataformas</span></a></li>
+                        <li class="contactenos"><a href="http://www.udem.edu.co/index.php/contactenos" target="_blank" title="Contacto"><span>Contacto</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            
+            <section>
+                <div class="quienes_somos">
+                    
+                    <div id="separador"><h1>¿Quiénes Somos?</h1>
+                        <p><img src="img/separador.png"/></p>
+                    </div>
+                    
+                    <div class="contenedor">
+                        <p><strong >Misión</strong></p>
+                        <p>Es responsabilidad de Educación Virtual y TIC de la Universidad de Medellín, contribuir al desarrollo y crecimiento académico atendiendo los principios, valores y fundamentos de la Institución, mediante el fortalecimiento de programas virtuales, la incorporación de las Tecnologías de la Información y las Comunicaciones en la educación presencial y la implementación de productos y servicios innovadores que atiendan las exigencias del mundo actual.</p>
+                        <p><strong>Visión</strong></p>
+                        <p>En el 2020 Educación Virtual y TIC de la Universidad de Medellín será reconocida en el contexto interno y regional por la cobertura de programas virtuales e incorporación de las TIC en la educación presencial; propiciando inclusión digital, gestión de conocimiento y fortalecimiento de la cultura de la virtualidad en los procesos educativos.</p>
+                        <p><strong>Valores</strong></p>
+                        <ul style="line-height:20px;">
+                            <li>Responsabilidad</li>
+                            <li>Colaboración</li>
+                            <li>Excelencia</li>
+                            <li>Respeto</li>
+                            <li>Autenticidad</li>
+                        </ul>
+                    </div>
+                    <div id="avata">
+                        
+                    </div>
+                    
+                    <div class="chalkboard horizontal-menu">
+                        <dl>
+                            <dt>
+                                <div id="historia"></div>
+                                <a href="#historia" class="nounderline">Historia</a>    
+                            </dt>
+                            <dd>
+                            <div id="separador"><h2>Historia</h2>
+                            <p><img src="img/separador.png"/></p>
+                            </div>  
+                                <div id="linea_tiempo">
+                                    <img src="content/linea_tiempo.png"/>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <div id="talento_hum"></div>
+                                <a href="#talento_hum" class="nounderline">Talento humano</a>
+                            </dt>
+                            <dd>
+                                <div id="separador"><h2>Talento humano</h2>
+                                <p><img src="img/separador.png"/></p><br /><br />
+                                	</div>
+                                
+                                <div class="box_hum" style="margin: auto">
+                                    <img src="content/talento_humano/img_lider_educ_1.jpg" onmouseover="this.src='content/talento_humano/img_lider_educ_2.jpg';" onmouseout="this.src='content/talento_humano/img_lider_educ_1.jpg';"/>
+                                    <h4>Sandra Isabel Arango</h4>
+                                    <img src="img/separador.png" id="separador_1"/> 
+                                    <p>Líder de Educación Virtual y TIC</p>
+                                </div>
+                                <div class="container_talento">
+                                    <div class="box_hum">
+                                      <img src="content/talento_humano/img_mediador_TIC_1.jpg" onmouseover="this.src='content/talento_humano/img_mediador_TIC_2.jpg';" onmouseout="this.src='content/talento_humano/img_mediador_TIC_1.jpg';"/>
+                                       <h4>Maria Yesenia Gallego</h4>
+                                       <img src="img/separador.png" id="separador_1"/> 
+                                       <p>Mediador de TIC</p>
+                                    
+                                    </div>      
+                                    <div class="box_hum">
+                                        <img src="content/talento_humano/img_mediador_educacion_1.jpg" onmouseover="this.src='content/talento_humano/img_mediador_educacion_2.jpg';" onmouseout="this.src='content/talento_humano/img_mediador_educacion_1.jpg';"/>
+                                        <h4>Carolina Llanos</h4>
+                                        <img src="img/separador.png" id="separador_1"/> 
+                                        <p>Mediador de Educación Virtual</p>
+                                                
+                                    </div>      
+                                    <div class="box_hum">
+                                        <img src="content/talento_humano/img_gestor_pedag_1.jpg" onmouseover="this.src='content/talento_humano/img_gestor_pedag_2.jpg';" onmouseout="this.src='content/talento_humano/img_gestor_pedag_1.jpg';"/>
+                                       <h4>Edilberto Restrepo</h4>
+                                       <img src="img/separador.png" id="separador_1"/> 
+                                       <p>Gestor Pedagógico Virtual</p>
+                                                
+                                    </div>  
+                                    <div class="box_hum">
+                                        <img src="content/talento_humano/img_tutor_virtual_1.jpg" onmouseover="this.src='content/talento_humano/img_tutor_virtual_2.jpg';" onmouseout="this.src='content/talento_humano/img_tutor_virtual_1.jpg';"/>
+                                        <h4>Ricardo Becerra</h4>
+                                        <img src="img/separador.png" id="separador_1"/> 
+                                        <p>Gestor Pedagógico Virtual</p>       
+                                    </div>   
+                                    <div class="box_hum">
+                                         <img src="content/talento_humano/img_gestor_calidad_1.jpg" onmouseover="this.src='content/talento_humano/img_gestor_calidad_2.jpg';" onmouseout="this.src='content/talento_humano/img_gestor_calidad_1.jpg';"/>
+                                        <h4>Jennifer Ospina</h4>
+                                        <img src="img/separador.png" id="separador_1"/> 
+                                        <p>Gestor de Calidad Virtual</p>
+                                               
+                                    </div>     
+                                    <div class="box_hum">
+                                         <img src="content/talento_humano/img_gestor_conten_1.jpg" onmouseover="this.src='content/talento_humano/img_gestor_conten_2.jpg';" onmouseout="this.src='content/talento_humano/img_gestor_conten_1.jpg';"/>
+                                        <h4>Liliana Vera</h4>
+                                        <img src="img/separador.png" id="separador_1"/> 
+                                        <p>Gestor de Contenidos Virtuales</p>
+                                                
+                                    </div>
+                                    <div class="box_hum">
+                                        <img src="content/talento_humano/img_gestor_digital_1.jpg" onmouseover="this.src='content/talento_humano/img_gestor_digital_2.jpg';" onmouseout="this.src='content/talento_humano/img_gestor_digital_1.jpg';"/>
+                                        <h4>Santiago Hernández</h4>
+                                        <img src="img/separador.png" id="separador_1"/> 
+                                        <p>Gestor Digital y Multimedial </p>         
+                                    </div>                                
+                                    <div class="box_hum">
+                                        <img src="content/talento_humano/img_tutor_virtual_1.jpg" onmouseover="this.src='content/talento_humano/img_tutor_virtual_2.jpg';" onmouseout="this.src='content/talento_humano/img_tutor_virtual_1.jpg';"/>
+                                        <h4>Martha Nelly Restrepo</h4>
+                                        <img src="img/separador.png" id="separador_1"/> 
+                                        <p>Tutor Virtual</p>       
+                                    </div>            
+                                    <div class="box_hum">
+                                        <img src="content/talento_humano/img_tutor_virtual_3.jpg" onmouseover="this.src='content/talento_humano/img_tutor_virtual_4.jpg';" onmouseout="this.src='content/talento_humano/img_tutor_virtual_3.jpg';"/>
+                                        <h4>Martín Vásquez</h4>
+                                        <img src="img/separador.png" id="separador_1"/> 
+                                        <p>Tutor Virtual</p>         
+                                    </div>      
+                                </div>
+                          
+                                
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <div id="modelo"></div>
+                                <a href="#modelo" class="nounderline">Modelo Pedagógico</a>
+                            </dt>
+                            <dd>
+                                <div id="separador"><h2>Modelo Pedagógico</h2>
+                                <p><img src="img/separador.png"/></p><br /><br />
+                                </div>
+                                
+                                <div id="modelo_pedagogico">
+                                                                
+                                <p>El Modelo pedagógico de la Universidad de Medellín, en su pilar de gestión, incluye la modalidad de educación a distancia con metodología virtual, esta metodología debe incluir Objeto Virtual de Aprendizaje, Entorno Virtual de Aprendizaje e Interacciones Comunicativas.</p>
+                                    
+                                    <img src="content/modelo_pedagogico.png" alt="Modelo pedagógico"/>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <div id="SGC"></div>           
+                                <a href="#SGC" class="nounderline">SGC</a>
+                            </dt>
+                            <dd>
+                                <div id="separador"><h2>Sistema de Gestión de la Calidad</h2>
+                                <p><img src="img/separador.png" /></p><br /><br />
+                                </div>
+                                
+                                <div id="img_sgc"><iframe src="sgc.html" width="1100" height="820" frameborder="0" scrolling="no"></iframe></div>
+                                
+                                <div id="boton_sgc"><a href="sgc.html" class="botonvermas" target="_blank">Ver más</a></div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <div id="plan"></div>
+                                <a href="#plan" class="nounderline">Plan de Desarrollo</a>
+                            </dt>
+                            <dd>
+                                <div id="separador"><h2>Plan de Desarrollo</h2>
+                                <p><img src="img/separador.png"/></p><br /><br />
+                                </div>
+                                
+                                <div id="plan_desarrollo">
+                                    <img src="content/plan_desarrollo.png" alt="Plan de desarrollo"/>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                    
+                </div>
+                <br class="clear"/>
+            </section>
+        </div>
+        
+        <a href="http://www.udem.edu.co/index.php" target="blank"><footer><!-- Configurado como fondo desde la hoja de estilos--></footer></a>
+</html>

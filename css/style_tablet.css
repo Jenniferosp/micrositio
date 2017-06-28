@@ -1,0 +1,449 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Tamaño para escritorio*/
+@media screen and (min-width : 513px)and (max-width: 799px){
+
+body {
+	margin:0;
+    font-family:sans-serif, Lucida Grande, Lucida bright, arial, verdana;
+	
+	}
+    
+#encabezado_sup {	
+	background:#ba0f16;
+	width:auto;
+	height:30px;
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    z-index:9;
+	}
+#main {
+	background:rgba(235,235,235,1);
+	height:100%;
+	margin:0 auto;
+	max-width: 1024px;
+	}
+	
+header {
+	width:100%;
+	height:auto;
+	margin:0;
+}
+    
+#slider-container:before {	
+    content:"";
+    background:url(../img/LogoUdem.png) no-repeat;
+    width:137px;
+    height:109px;
+    position:absolute;
+    left: -4px;
+    z-index:99;
+}
+
+#slider-container {
+	position:relative;
+}
+
+nav {
+	background:#00cace;
+	width:100%;
+    margin: -16px 0 0 0;
+	}
+	
+#menu {
+	width:90%;
+	height:auto;
+	margin:0 auto;
+
+	
+	}
+    
+#menu li a {
+    color: #fff;
+    text-decoration:none;
+    font-weight: bold;	
+}
+
+#menu li a span {
+	display: none;
+}
+#menu li.active {
+    position: relative;
+}
+
+#menu li.active:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -12px;
+    border-bottom: 0px solid transparent;
+    border-top: 13px solid #00cace;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    right: 25px;
+}
+
+#menu li.active a {
+    color: #07616d;
+}
+    
+#menu li {
+	/*los botontes se visualizan en bloques*/
+	display: inline-block;
+    text-transform: capitalize;
+    font-size: 13px;
+    text-align: center;
+    width: 140px;
+    padding: 20px 0px;
+    position: relative;
+
+}
+
+#menu li:hover {
+opacity: 0.8;
+}
+
+#menu li i.ion-ios-home {
+    left:26px;
+}
+
+#menu li i.ion-ios-people {
+    left:9px;
+}
+
+#menu li i.ion-ios-color-filter {
+    left: 13px;;
+}
+
+#menu li i.ion-ios-monitor {
+    left:-2px;
+}
+
+#menu li i.ion-person {
+    left:13px;
+}
+
+#menu li i {
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    top: 9px;
+}
+
+#menu li.active i {
+    color: #07616d;
+}
+
+#menu ul {
+	display: flex;
+    justify-content: center;
+	
+}
+
+section {
+	padding-bottom:30px;
+}
+
+section video {
+	width:85%;
+	height:50%;
+	
+	}
+	
+.txtgaleria{
+		font-family:sans-serif, Lucida Grande, Lucida bright, arial, verdana;
+		}
+		
+.imggaleria{
+		border-width: 8px;
+		border-radius:25px;
+		padding: 10px;
+		}
+		
+#container {
+		margin: 0 auto;
+		width:90%;
+		}
+		
+.zoom img{
+		height: 150px;
+		width:200px;
+		margin: 0;
+		webkit-transition: all 1s ease;
+		moz-transition: all 1s ease;
+		ms-transition: all 1s ease;
+		transition: all 1s ease;
+		}
+		
+.zoom img:hover {
+		height: 100px;
+		width: 200px;
+		margin: 0 auto;
+		}
+
+footer {
+    background:url(../img/footer.png) no-repeat;
+    background-size: 40%;
+    width: 100%;
+    height: 270px;
+    background-position: 45% 0%;
+  	margin: 50px auto;
+   
+}
+
+.clear { clear:both; }
+
+/*Plataformas*/
+#plataformas {
+    display: -moz-flex; /* Mozilla */
+    -moz-justify-content: center; /* Mozilla */
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: center; /* Safari 6.1+ */
+    justify-content: center; 
+     display: -ms-flex;/*IE*/
+    -ms-justify-content: center; 
+}
+    
+#plataformas a:hover {
+	background: #ddd;
+	opacity: 0.6;
+	border-radius: 32px 32px 0 0;
+}
+
+#plataformas div { 
+    width: 194px
+	; 
+    height:275px;
+    margin: 0 auto;
+}
+
+#plataformas .uv_academica {
+	background:url(../img/uv_academica.png) no-repeat;
+	}
+#plataformas .uv_investigaciones {
+    background:url(../img/uv_investigaciones.png) no-repeat;
+}
+
+#plataformas .uv_evaluaciones {
+    background:url(../img/uv_evaluaciones.png) no-repeat;
+}
+
+
+
+/*Página de ¿Quiénes Somos?*/
+h2 {
+	margin-top: 50px;
+	color:#00cace;
+	text-align:center;
+	font-size:16px;
+}
+
+
+.quienes_somos { 
+	margin: 50px 70px;
+    text-align: justify;
+	color:#808080;
+	font-size:13px;
+	}
+
+
+
+.horizontal-menu {
+    margin: 10px;
+
+}
+
+.horizontal-menu .chalkboard_items >.chalkboard_item {
+    padding: 10px;
+    margin: 0;
+	max-width: 100%;
+    text-align: center;
+    float: left;
+    color: #6e6e6f;
+    border: 1px solid #08a0a0;
+	border-radius:5px;
+}
+
+.horizontal-menu .chalkboard_items >.chalkboard_item.active, .horizontal-menu .chalkboard_items >.chalkboard_item.current {
+    color: #6e6e6f;
+    background-color: #dbdcde;
+	border: 1px solid #08a0a0;
+	border-radius:5px;
+}
+
+
+.horizontal-menu >.chalkboard_content {
+    max-width: 98%;
+    float: left;
+    padding: 1%;
+    overflow: auto;
+    font-size: 13px;
+    margin-top: -1px;
+	height: 100%;
+	border: 1px solid #08a0a0;
+	border-radius:5px;
+	background-color: #f3f3f4;
+	
+}
+
+.chalkboard.horizontal-menu {margin: 0 70px 0 70px;
+	
+}
+.horizontal-menu> .chalkboard_content h5 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+    color: #00cace;
+	
+}
+
+#talento_humano  img {
+	width:270%;
+	margin: 0 -43%;
+	
+}
+
+#linea_tiempo  img {
+	width:150%;
+	margin: 0 -27%;
+	
+}
+
+/****linea de tiempo y talento humano****/
+#linea_tiempo, #talento_humano {
+	margin:30px 90px;;
+	
+} 
+
+/*Transformación de rotación*/
+#talento_humano {
+	width:30%;
+   height:30%;
+
+	}
+
+#talento_humano:hover {
+	   transform-origin:center;
+	   transform:rotate(-30deg);/* De forma negativa la transformación se da al lado contrario*/
+	   		
+			transition:all 1ms ease-out;
+	 		 -webkit-transition:all 1ms ease-out;
+	}
+
+/****redes sociales*******/
+.social {
+	margin:0;
+	padding:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position:fixed;
+	left:-40px;
+	top:200px;
+	z-index: 99;
+
+}
+
+#maps {
+	
+	bottom:0;
+	position:fixed;
+	
+}
+
+.social ul{
+	list-style: none;
+	
+	
+}
+
+.social ul li a {
+	
+	display:inline-block;
+	color: #fff;
+	background: #000;
+	padding: 5% 10%;
+	text-decoration: none;
+	width: 25px;
+	height: 35px;
+	
+}
+
+.social ul li a:hover{
+	padding: 10px 40px;
+	background:#000;
+	-webkit-transition: all 500ms ease;
+	-moz-transition:all 500ms ease;
+	transition: all 500ms; ;
+	
+}
+
+
+.ion-2x {
+	
+	font-size: 25px;
+}
+
+
+.social ul li .ion-social-facebook{
+	background: #3b5998;
+
+}
+
+.social ul li .ion-social-twitter{
+	background: #00abf0;
+}
+
+.social ul li .ion-social-linkedin{
+	background: #0077b5;
+}
+
+.social ul li .ion-social-youtube{
+	background: #e62117;
+}
+
+.social ul li .ion-social-instagram-outline{
+	background: #b78e6f;
+}
+
+/***Página modelo pedagógico**/
+/**Modelo pedagógico de pregrado**/
+#mod_pregrado .mod_ppre { background: url(../img/mod_ppre.png) no-repeat; width: 900px; height: 394px; position: relative; margin: auto; background-size: 55%;
+background-position: 2%;}
+
+
+/***Modelo pedagógico de posgrado***/
+#mod_posgrado .mod_ppos { background: url(../img/mod_ppos.png) no-repeat; width: 1000px; height: 430px; position: relative; margin:0 auto; background-size: 50%;
+background-position: 2%; }
+
+#lado_derecho {
+	left:50px;
+
+}
+
+/*Formulario*/
+
+#avata { 
+width: 50px;
+margin: auto;
+position: initial;
+float: none;
+}
+
+aside {
+	margin:0;
+	
+}
+
+.element-blue, .element-green, .element-red {
+	min-height: 225px;
+}
+.required_notification{
+	margin: 2% 36%;
+	
+}
+}

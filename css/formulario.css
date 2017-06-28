@@ -1,0 +1,231 @@
+﻿@charset "utf-8";
+/* CSS Document */
+#form {
+    margin: 0 auto;
+    border:1px solid #019e9e;
+    border-radius: 10px;
+    background: rgba(235,235,235,0.5);
+    max-width:70%;
+	min-width:240px;
+    height:auto;
+	padding-bottom:150px;
+}   
+*:focus {
+    outline: none;
+
+}
+
+
+.form_hint, .required_notification {
+    font-size: 12px;
+    color:#808080;
+    font-weight:bold;
+} 
+
+
+/* === Estilos de lista === */
+.contact_form ul {
+    max-width: 90%;
+	min-width:250px;
+    height:auto;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: auto;
+    padding: 10px 0 0;
+   
+     
+}
+.contact_form li {
+    padding: 12px;
+    position: relative;
+    margin:0 auto;
+}
+/*.contact_form li:first-child, .contact_form li:last-child {
+    border-bottom: 1px solid #808080;
+}*/
+
+ /* === Encabezado del formulario === */
+
+.required_notification {
+    margin: 2% -7%;
+    display: inline;
+    float: right;
+} 
+
+/* === Elementos del formulario === */
+.contact_form label {
+   font-family:sans-serif, Lucida Grande, Lucida bright, arial, verdana;
+    width: 150px;
+    margin:2px 50px 0 9px;
+    display: inline-block;
+    float: left;
+    padding: 3px;
+    font-size: 14px; 
+    color:#00627b;
+}
+.contact_form input {
+    max-width: 250px;
+	min-width:100px;
+    height: 20px;
+    padding: 5px 8px;
+}
+
+select {
+    max-width:213px;
+	min-width:100px;
+    height:35px;
+    padding: 5px 8px;
+    
+}
+.contact_form textarea {
+    padding: 8px;
+    max-width: 230px;
+	min-width:100px;
+    height:auto;
+}
+.contact_form button {
+    margin:0.5em;
+}
+
+.required {
+    
+    font-size:16px;
+    font-weight:bold;
+    color:#F44336; 
+}
+
+/* Efectos visuales del formulario */
+.contact_form input, .contact_form textarea, select  {
+    border: 1px solid #019e9e;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius: 10px;
+    padding-right: 30px;
+    -moz-transition: padding .25s;
+    -webkit-transition: padding .25s;
+    -o-transition: padding .25s;
+    transition: padding .25s;
+}
+/*el estado :focus, quiere decir que se activa al dar clic*/
+
+.contact_form input:focus, .contact_form textarea:focus {
+    background: #fff;
+    border: 1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+    padding-right: 70px;
+}
+
+
+/* === HTML5 validation styles === */
+.contact_form input:required, .contact_form textarea:required {
+background: #fff url(images/red_asterisk.png) no-repeat 98% center;
+}
+
+.contact_form input:required:valid, .contact_form textarea:required:valid {
+background: #fff url(images/valid.png) no-repeat 98% center;
+box-shadow: 0 0 5px #5cd053;
+border-color: #28921f;
+}
+
+.contact_form input:focus:invalid, .contact_form textarea:focus:invalid {
+background: #fff url(images/invalid.png) no-repeat 98% center;
+box-shadow: 0 0 5px #d45252;
+border-color: #b03535;
+} 
+
+
+/* === Form hints === */
+.form_hint {
+    background: #fff;
+    border-radius: 3px 3px 3px 3px;
+    color: #808080;
+    margin-left: 8px;
+    padding: 3px 5px;
+    z-index: 999; /* hints stay above all other elements */
+    position: absolute; /* allows proper formatting if hint is two lines */
+    display: none;
+}
+.form_hint::before {
+    content: "\25C0";
+    color: #d45252;
+    position: absolute;
+    top: 1px;
+    left: -6px;
+}
+.contact_form input:focus + .form_hint {
+    display: inline;
+}
+.contact_form input:required:valid + .form_hint {
+background: #28921f;
+}
+.contact_form input:required:valid + .form_hint::before {
+color: #28921f;
+} 
+
+#imagen_izquierda {
+    width:250px;
+    margin-top:-152px; 
+    position:absolute;
+}
+
+#imagen_derecha {
+    width:300px;
+    margin-left:618px;
+    margin-top:-469px;
+    position:absolute;
+}
+
+#informacion_contacto {
+    width:355px;
+    position:absolute;
+    margin: -53px 200px;
+    text-align:center;
+    color:#00627b;
+    
+}
+#informacion_contacto h2 {
+    font-weight:bold;
+    
+}
+
+#informacion_contacto h3 {
+    font-size:28px;
+    font-weight:200;
+    margin-top:-25px;
+    
+}
+#informacion_contacto p {
+    font-size:14px;
+    margin-top:-10px;
+    
+    
+}
+
+/* === Button Style === */
+button.submit {
+    font-weight:bold;
+    text-align: center;
+    color: #fff;
+    background:#00cace;
+    max-width:130px;
+	min-width:90px;
+    height:40px;
+    border-radius: 5px;
+    margin-left:20em;
+}
+    
+
+button.submit:hover {
+    opacity: .85;
+    cursor: pointer;
+}
+button.submit:active {
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b inset;
+    -webkit-box-shadow: 0 0 10px 5px #356b0b inset;
+    -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+    -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+    -o-box-shadow: 0 0 10px 5px #356b0b inset;
+}
+
+
+
